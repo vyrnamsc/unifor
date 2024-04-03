@@ -372,16 +372,14 @@ INICIO
             // Exibe a mensagem informando a categoria, nesse caso Juvenil B
             ESCREVA "Juvenil B"
 
-        // A situação da idade seja menor ou igual a 18
+        // A situação da idade seja maior ou igual a 18
         CASO idade >=18
 
             // Exibe a mensagem informando a categoria, nesse caso Adulto
             ESCREVA "Adulto"
 
-    // Insira seu comentário
+    // Exibe uma mensagem de erro para idade inválida caso a idade não seja um número inteiro
     SENAO
-
-        // Exibe uma mensagem de erro para idade inválida
         ESCREVA "Digite uma idade válida!"
 
     FIM_ESCOLHA
