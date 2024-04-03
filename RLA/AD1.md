@@ -1,15 +1,15 @@
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
-**Código/Turma:** preencha com seus dados <br>
+**Curso:** Engenharia Elétrica <br>
+**Disciplina:** Raciocínio lógico algorítmico  <br>
+**Código/Turma:** T998-21 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 01/04/2024 <br>
+**Aluno(a):** Vyrna Moura Saboia Cavalcante <br>
+**Matrícula:** 2210638 <br>
 
-**1a chamada (Sim/Não):** preencha com a opção correta <br>
-**2a chamada (Sim/Não):** preencha com a opção correta
+**1a chamada (Sim/Não):** NÃO <br>
+**2a chamada (Sim/Não):** SIM
 
 # Avaliação Diagnóstica 1
 
@@ -79,28 +79,28 @@ DECLARE a,b,axu: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário para o número real da variável "a"
     ESCREVA "Digite o valor da a:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "a"
     LEIA a
 
-    // Insira seu comentário
+    // Entrada do usuário para o número real da variável "b"
     ESCREVA "Digite o valor da b:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "b"
     LEIA b
 
-    // Insira seu comentário
+    // Atribui o valor de "a" em "aux"
     aux <- a 
 
-    // Insira seu comentário
+    // Atribui o valor de "b" a "a"
     a <- b
 
-    // Insira seu comentário
+    // Atribui o valor de "aux", que é o valor original de "a", a "b"
     b <- aux
 
-    // Insira seu comentário
+    // Exibe a mensagem com os novos valores trocados
     ESCREVA "a=", a
     ESCREVA "b=", b
 
@@ -175,36 +175,36 @@ DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário para a quantidade de notas
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa o contador de alunos aprovados
     cont = 0 
 
-    // Insira seu comentário
+    // Loop para receber as notas dos alunos
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Solicita ao usuário que insira a nota do aluno
         ESCREVA "Digite a nota do aluno", i, ":"
 
-        // Insira seu comentário
+        // Armazena a nota do aluno na variável "nota"
         LEIA nota
 
-        // Insira seu comentário
+        // Executa e verifica se a nota está entre 50 e 100
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Incrementa o contador de alunos aprovados somando 1
             cont = cont + 1 
 
         FIM_SE
 
     FIM_PARA
 
-    // Insira seu comentário
-    ESCREVA "O numero de alunos aprovados e:", cont
+    // Exibe a mensagem informando a quantidade de alunos aprovados 
+    ESCREVA "O numero de alunos aprovados é:", cont
 
 FIM
 ```
@@ -271,43 +271,44 @@ DECLARE n,i,soma: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário para a quantidade de números
     ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+    // Armazena o valor de entrada na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Verifica se o valor de n é maior ou igual a zero
     SE n >=0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa a variável de "soma" em 0
         soma <- 0
 
-        // Insira seu comentário
-        i <- i
+        // Inicializa o contador "i" em 1
+        i <- 1
 
-        // Insira seu comentário
+        // Loop condicional (loop while) executa as instruções enquanto a condição "i <= n" for verdadeira
         ENQUANTO i <= n FAÇA
 
-            // Insira seu comentário
+            // Solicita ao usuário que digite um número
             ESCREVA "Digite um número:"
 
-            // Insira seu comentário
+            // Armazena o valor de entrada na variável "num"
             LEIA num 
 
-            // Insira seu comentário
+            // Adiciona o "num" à "soma" atual
             soma <- soma + num
 
-            // Insira seu comentário
+            // Incrementa o contador somando 1 à "i"
             i <- i + 1
 
         FIM_ENQUANTO
 
-    // Insira seu comentário
+    // Exibe a mensagem caso o valor de n seja menor que zero
     SENAO
-        "O valor deve ser maior ou igual a zero!"
+        ESCREVA "O valor deve ser maior ou igual a zero!"
 
     FIM_SE
 
-    // Insira seu comentário
+    // Exibe a mensagem informando a soma dos números
     ESCREVA "A soma dos numeros é , soma"
 
 FIM
@@ -366,33 +367,33 @@ DECLARE n,numerador,denominador: INTEIRO; termo, S: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que digite o número de termos da série S
     ESCREVA "Digite o número de termos da série S:"
 
-    // Insira seu comentário
+    // Armazena o valor digitado pelo usuário e armazena em "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável S, soma da série, como zero
     S <- 0
 
-    // Insira seu comentário
+    // Loop de contagem para calcular os termos da série e somá-los
     PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
 
-        // Insira seu comentário
+        // Calcula o numerador do termo atual da série multiplicando por 2 o "i" e somando à 1
         numerador = 2 * i + 1
 
-        // Insira seu comentário
+        // Calcula o denominador do termo atual da série multiplicando por 2 o "i" e somando à 2
         denominador <- 2 * i + 2
 
-        // Insira seu comentário
+        // Calcula o termo atual da série dividindo o numerador e o denominador 
         termo = numerador / denominador
 
-        // Insira seu comentário
-        S += termo
+        // Calcula a soma o termo atual à variável S
+        S <- S + termo
 
     FIM_PARA
 
-    // Insira seu comentário
+    // Exibe a mensagem informando a soma da sperie S
     ESCREVA "Soma da série S é ", S
 
 FIM
@@ -445,30 +446,30 @@ DECLARE n: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que digite o número inteiro não negativo
     ESCREVA "Digite um numero inteiro nao-negativo:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Executa a instrução para verificar se "n" não é negativo
     SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa o fatorial como 1
         fator <- 1
 
-        // Insira seu comentário
+        // Calcula o fatorial usando um loop de contagem
         PARA i DE 1 ATÉ n PASSO 1 FAÇA
 
-            // Insira seu comentário
+            // Multiplica o fatorial pelo valor atual de i
             fator <- fator * i        // fator *= i
 
         FIM_PARA
 
-        // Insira seu comentário
+        // Exibe uma mensagem informando o fatorial calculado
         ESCREVA "O fatorial de, n, é:", fator
 
-    // Insira seu comentário
+    // Exibe uma mensagem de erro se o número for negativo
     SENAO
         ESCREVA "O valor deve ser maior ou igual a zero!"
     FIM_SE
@@ -524,31 +525,31 @@ DECLARE n, a, b, termo_atual: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário para o números de termos 
     ESCREVA "Número de termos da série Fibonacci:"
 
-    // Insira seu comentário
+    // Armazena o valor digitado pelo usuário e armazena em "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa o primeiro termo da série Fibonacci
     a <- 0
 
-    // Insira seu comentário
+    // Inicializa o segundo termo da série Fibonacci
     b <- 1
 
-    // Insira seu comentário
+    // Loop de contagem para gerar os termos da série Fibonacci
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Exibe uma mensagem com o termo atual da série Fibonacci
         ESCREVA a
 
-        // Insira seu comentário
+        // Calcula o próximo termo da série Fibonacci somando os dois primeiros termos da série Fibonacci
         termo_atual <- a + b
 
-        // Insira seu comentário
+        // Atualiza o valor de "a" para "b" para os próximos cálculos
         a <- b
 
-        // Insira seu comentário
+        // Atualiza os valores de "b" para "termo_atual" para os próximos cálculos
         b <- termo_atual
 
     FIM_PARA
@@ -606,35 +607,35 @@ DECLARE num, num_inv, digito: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário de um número inteiro qualquer armezando na variável "num"
     ESCREVA "Digite o número a ser invertido:"
     LEIA num
 
-    // Insira seu comentário
+    // Executa a instrução para verificar se "n" é positivo
     SE num < 0 ENTAO
 
-        // Insira seu comentário
+        // Exibe uma mensagem de erro caso o número seja negativo
         ESCREVA "O número deve ser positivo!"
 
-    // Insira seu comentário
+    // Caso contário continua
     SENAO
 
-        // Insira seu comentário
+        // Inicializa a variável para armazenar o número invertido
         num_inv <- 0
 
-        // Insira seu comentário
+        // Loop condicional para inverter o número enquanto houver dígitos
         ENQUANTO num > 0 FAÇA
 
-            // Insira seu comentário
+            // Calcula o dígito da divisão de "num" por 10
             digito <- num % 10
 
-            // Insira seu comentário
+            // Adiciona o dígito invertido ao número invertido
             num_inv <- (num_inv * 10) + digito
 
-            // Insira seu comentário
+            // Remove o último dígito do número original dividindo "num" por 10
             num <- num // 10
 
-        // Insira seu comentário
+        // Exibe uma mensagem com o número invertido
         ESCREVA "Número invertido:", num_inv
 
     FIM_SE
