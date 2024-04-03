@@ -1,5 +1,5 @@
 # UNIFOR
-**Nome**: Nome do estudante <br>
+**Nome**: Vyrna Moura Saboia Cavalcante <br>
 **Disciplina**: Raciocínio lógico algorítmico
 
 ## Lista de exercícios 01
@@ -31,29 +31,29 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem para entrada de dados
     ESCREVA "Digite um número: "
     
-    // Insira seu comentário
+    // Armazena a entrada do usuário na variável "numero"
     LEIA numero
     
-    // Insira seu comentário
+    // Executa as instruções sob a condição "numero >= 0" for verdadeira
     SE numero >= 0 ENTAO
 
-        // Insira seu comentário
+        // Calcula o resto da divisão de "num" por 2
         resto <- numero % 2
 
-        // Insira seu comentário
+        // Executa a instrução se o resto é igual a zero
         SE resto == 0 ENTAO
             ESCREVA "O número é par!"
 
-        // Insira seu comentário
+        // Executa a instrução se o resto não for igual a zero
         SENAO
           ESCREVA "O número é impar!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Executa a instrução se inteiro for negativo
     SENAO             
         ESCREVA "O número deve ser postivo!"
 
@@ -96,23 +96,23 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário de um número real qualquer armezando na variável "sal_atual"
     ESCREVA "Digite seu salário atual:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "sal_atual"
     LEIA sal_atual
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "sal_atual <= 500" for verdadeira
     SE sal_atual <= 500 ENTAO
         sal_reaj = sal_atual * 1.2
 
-    // Insira seu comentário
+    // Executa a instrução se a condição "sal_atual <= 500" for falsa
     SENAO
         sal_reaj = sal_atual * 1.1
 
     FIM_SE
 
-    // Insira seu comentário
+    // Exibe a mensagem com o número do novo salário
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
@@ -156,35 +156,35 @@ DECLARE nota1, nota2, media: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário de um número real qualquer armezando na variável "nota1"
     ESCREVA "Digite a nota 1:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "nota1"
     LEIA nota1
 
-    // Insira seu comentário
+    // Entrada do usuário de um número real qualquer armezando na variável "nota2"
     ESCREVA "Digite a nota 2:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "nota2"
     LEIA nota2
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "nota1 >= 0 E nota2 >= 0" for verdadeira
     SE nota1 >= 0 E nota2 >= 0 ENTAO
 
-        // Insira seu comentário
+        // Calcula o valor da media somando a nota1 e nota2 e dividindo por 2
         media =  (nota1 + nota2)/2
 
-        // Insira seu comentário
+        // Executa as instruções sob a condição "media >= 7" for verdadeira
         SE media >= 7 ENTAO
             ESCREVA "O aluno está aprovado!"
 
-        // Insira seu comentário
+        // Executa a instrução se a media for menor que 7
         SENAO
-            "O aluno está reprovado!"
+            ESCREVA "O aluno está reprovado!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Executa a instrução se real for negativo
     SENAO
         ESCREVA "A nota deve ser maior que zero!"
 
@@ -231,30 +231,30 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário para a idade
     ESCREVA ""Digite a sua idade:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "idade"
     LEIA idade
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "idade < 0" for verdadeira
     SE idade < 0 ENTAO
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Insira seu comentário
+    // Executa caso seja falso
     SENAO
 
-        // Insira seu comentário
+        // Executa as instruçôes para saber se o candidato está apto a tirar a CNH
         SE idade >= 18 ENTAO
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Insira seu comentário
+        // Executa caso candidato não esteja apto
         SENAO
 
-            // Insira seu comentário
+            // Calcula "anos_aptos" subtraindo o número 18 pela "idade"
             anos_apto <- 18 - idade
 
-            // Insira seu comentário
+            // Exibe a mensagem com o número de anos que faltam para o candidato estar apto
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
         FIM_SE
