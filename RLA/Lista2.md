@@ -238,7 +238,7 @@ INICIO
     // Realiza a operação de acordo com a escolha do usuário
     ESCOLHA
 
-        // Caso a operação seja soma (1)
+        // Caso a operação seja soma
         CASO op == 1
 
             // Calcula o resultado somando as variáveis inseriada pelo usuário
@@ -247,7 +247,7 @@ INICIO
             // Exibe a mensagem com o número do resultado da soma, operação 1
             ESCREVA num1, "+", num2, "=", res
 
-        // Caso a operação seja subtração (2)
+        // Caso a operação seja subtração
         CASO op == 2
 
             // Calcula o resultado subtraindo as variáveis inseriada pelo usuário
@@ -256,7 +256,7 @@ INICIO
             // Exibe a mensagem com o número do resultado da subtração, operação 2
             ESCREVA num1, "-", num2, "=", res
 
-        // Caso a operação seja multiplicação (3)
+        // Caso a operação seja multiplicação
         CASO op == 3
 
             // Calcula o resultado multiplicando as variáveis inseriada pelo usuário
@@ -265,7 +265,7 @@ INICIO
             // Exibe a mensagem com o número do resultado da multiplicação, operação 3
             ESCREVA num1, "*", num2, "=", res
 
-        // Caso a operação seja divisão (4)
+        // Caso a operação seja divisão
         CASO op == 4
 
             // Executa as instruções sob a condição de "num2" diferente de 0 for verdadeira
