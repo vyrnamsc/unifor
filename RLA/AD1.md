@@ -184,7 +184,7 @@ INICIO
     // Inicializa o contador de alunos aprovados
     cont = 0 
 
-    // Loop para receber as notas dos alunos
+    // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 1 até n, incrementando 'i' em 1.
     PARA i DE 1 ATE n FAÇA
 
         // Solicita ao usuário que insira a nota do aluno
@@ -376,7 +376,7 @@ INICIO
     // Inicializa a variável S, soma da série, como zero
     S <- 0
 
-    // Loop de contagem para calcular os termos da série e somá-los
+    // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 0 até n-1, incrementando 'i' em 1.
     PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
 
         // Calcula o numerador do termo atual da série multiplicando por 2 o "i" e somando à 1
@@ -458,7 +458,7 @@ INICIO
         // Inicializa o fatorial como 1
         fator <- 1
 
-        // Calcula o fatorial usando um loop de contagem
+        // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 0 até n, incrementando 'i' em 1.
         PARA i DE 1 ATÉ n PASSO 1 FAÇA
 
             // Multiplica o fatorial pelo valor atual de i
@@ -537,7 +537,7 @@ INICIO
     // Inicializa o segundo termo da série Fibonacci
     b <- 1
 
-    // Loop de contagem para gerar os termos da série Fibonacci
+    // Loop de contagem (loop for) para gerar os termos da série Fibonacci executando as instruções a cada iteração dos valores de 'i' de 0 até n, incrementando 'i' em 1.
     PARA i DE 1 ATE n FAÇA
 
         // Exibe uma mensagem com o termo atual da série Fibonacci
